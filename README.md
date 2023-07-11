@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+Sure! Here's the refined version in markdown format:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Create an Application using React and Express**
 
-## Available Scripts
+**For the Task:**
 
-In the project directory, you can run:
+1. Implement an application that fetches a list of movies (or any other data) from an API and displays them.
+   - Use middleware management to store the fetched data.
 
-### `npm start`
+2. When a user clicks on a particular item in the list, fetch the details of the selected item and display them. Also, add and store the selected item in the middleware.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. Ensure that fetching the details of the item only occurs once. If the user clicks on the same item again, retrieve the data from the stored state instead of making another API call.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. Create two APIs for your own data: a list API and a details API.
 
-### `npm test`
+**Application URL:** [https://pyramidions-movie-app.vercel.app](https://pyramidions-movie-app.vercel.app)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**React Libraries Used:**
+- react-router-dom
+- Material UI
+- Redux and Redux Thunk
 
-### `npm run build`
+**Cloud Platform Used for Deployment:** Vercel
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**APIs:**
+1. List API: [https://movie-api-pied-six.vercel.app/api/movies](https://movie-api-pied-six.vercel.app/api/movies)
+2. Details API: [https://movie-api-pied-six.vercel.app/api/movies/1](https://movie-api-pied-six.vercel.app/api/movies/1)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Express Library Used:** Express
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Cloud Platform Used for Deployment:** Vercel
