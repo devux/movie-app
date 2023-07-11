@@ -6,11 +6,21 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+
+const darkTheme = createTheme({
+  palette: {
+    primary: {
+      main: '#005c4d',
+    },
+  },
+});
 
 export default function ButtonAppBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+            <ThemeProvider theme={darkTheme}>
+      <AppBar position="static" color="primary">
         <Toolbar>
           <IconButton
             size="large"
@@ -22,11 +32,12 @@ export default function ButtonAppBar() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Movie App
+          Pyramidions | Movie App
           </Typography>
-          <Button color="inherit">Reset</Button>
+          <Button onClick={() => window.location.reload(false)} color="inherit">Reload</Button>
         </Toolbar>
       </AppBar>
+      </ThemeProvider>
     </Box>
   );
 }
